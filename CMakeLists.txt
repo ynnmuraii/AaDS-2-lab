@@ -21,7 +21,7 @@ endif()
 add_library(functions SHARED "include/functions/functions.h" "src/main.cc")
 target_include_directories(functions PUBLIC "include")
 
-add_executable(console_app "console/console.cc")
+add_executable(console_app "console/console_app.cc")
 target_link_libraries(console_app functions)
 
 include(FetchContent)
